@@ -1,111 +1,103 @@
 <html>
-	<style>
-        body a{
-            color:#ff006c;
-            text-decoration:none;
-        }
-        
-		.background{
-            background:black;
-            position:fixed;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: 0;
-		}
-        
-        .content{
-            position:fixed;
-            left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: 0;
-        }
-        
-        .title{
-            color:#ff006c;
-            font-size:36pt;
-            margin-left:50px;
-        }
-        
-        .info{
-            text-align:center;
-            width:200px;
-            float:left;
-            font-size:24pt;
-        }
-        
-        .controls{
-            position:fixed;
-            color:#bebebe;
-            font-size:10pt;
-            text-align:left;
-            left:5px;
-            bottom:5px;
-            background:#000000;
-            opacity:0.4;
-            border-radius:10px;
-            padding:5px;
-        }
+<style>
+    body a {
+        color: #ff006c;
+        text-decoration: none;
+    }
 
-        .wot{
-            color: #3c3c3c;
-            text-align: center;
-            margin-right:10px;
-            font-size:12pt;
-            line-height:16pt;
-            float:right;
-        }
-        
-        .wot h1{
-            line-height:0pt;
-        }
-	</style>
-	<head>
-		<meta charset="utf-8" />
-		<script src="dragoon.js"></script>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-17173891-3']);
-			_gaq.push(['_trackPageview']);
+    .background {
+        background: black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+    }
 
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-        <title>キキジキ物語 - KIKIJIKI MONOGATARI</title>
-	</head>
-	<body onLoad="init();">
-		<div class="background">
-            <canvas id="canvas"></canvas>
+    .content {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+    }
+
+    .title {
+        color: #ff006c;
+        font-size: 36pt;
+        margin-left: 50px;
+    }
+
+    .info {
+        text-align: center;
+        width: 200px;
+        float: left;
+        font-size: 24pt;
+    }
+
+    .controls {
+        position: fixed;
+        color: #bebebe;
+        font-size: 10pt;
+        text-align: left;
+        left: 5px;
+        bottom: 5px;
+        background: #000000;
+        opacity: 0.4;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .wot {
+        color: #3c3c3c;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 12pt;
+        line-height: 16pt;
+        float: right;
+    }
+
+    .wot h1 {
+        line-height: 0pt;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="dragoon.js"></script>
+    <title>キキジキ物語</title>
+</head>
+
+<body onLoad="init();">
+    <div class="background">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="content">
+        <div class="title">
+            <h1>キキジキ物語</h1>
         </div>
-        <div class="content">
-            <div class="title">
-                <h1>キキジキ物語</h1>
-            </div>
-            <div class="info">
-                <a href="mailto:kikijiki@kikijiki.com">【Mail】</a><br/><br/>
-                <a href="http://www.github.com/kikijiki">【Github】</a>
-            </div>
-            <div class="controls">
-                move：←　→<br/>
-                jump：↑<br/>
-                fly：space
-            </div>
-            <div class="wot">
-                <h1>無始時來の日事記</h1><br/>
-                <p>時の車輪がまわり、さまざまなブログが訪れた。</p>
-                <p>ブログが過ぎ去るにつれて、残った記憶は伝説になり、やがて神話になった。</p>
-                <p>そして神話も忘れ去られたころに、再び同じブログがめぐってきた。</p>
-                <p>あるブログには―キキジキ物語だという者もいるが、<br/>まだ来ていないブログかもしれず、<br/>また過ぎ去ったブログかもしれないと言う者もいるが―霜剣山の山脈から風が立ち昇った。</p>
-                <p>この風が全ての始まりだったわけではない。</p>
-                <p>時の車輪の回転には、始まりも終わりもない。</p>
-                <p>だが、何かの始まりには違いなかった。</p>
-            </div>
+        <div class="info">
+            <a href="mailto:dev@kikijiki.com">Mail</a><br /><br />
+            <a href="http://www.github.com/kikijiki">Github</a>
         </div>
-	</body>
+        <div class="controls">
+            move：←　→<br />
+            jump：↑<br />
+            fly：space
+        </div>
+        <div class="wot">
+            <h1>無始時來の日事記</h1><br />
+            <p>時の車輪がまわり、さまざまなブログが訪れた。</p>
+            <p>ブログが過ぎ去るにつれて、残った記憶は伝説になり、やがて神話になった。</p>
+            <p>そして神話も忘れ去られたころに、再び同じブログがめぐってきた。</p>
+            <p>あるブログには―キキジキ物語だという者もいるが、<br />まだ来ていないブログかもしれず、<br />また過ぎ去ったブログかもしれないと言う者もいるが―霜剣山の山脈から風が立ち昇った。</p>
+            <p>この風が全ての始まりだったわけではない。</p>
+            <p>時の車輪の回転には、始まりも終わりもない。</p>
+            <p>だが、何かの始まりには違いなかった。</p>
+        </div>
+    </div>
+</body>
+
 </html>
